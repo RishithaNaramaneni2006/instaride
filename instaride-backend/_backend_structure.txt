@@ -1,0 +1,45 @@
+instaride-backend/
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/
+│   │   │       └── yourdomain/
+│   │   │           └── instaride/
+│   │   │               ├── InstaRideApplication.java  (Main class)
+│   │   │               ├── config/
+│   │   │               │   ├── SecurityConfig.java
+│   │   │               │   └── CorsConfig.java
+│   │   │               ├── controller/
+│   │   │               │   ├── AuthController.java
+│   │   │               │   ├── RideController.java
+│   │   │               │   └── AccountController.java
+│   │   │               ├── dto/ (Data Transfer Objects)
+│   │   │               │   ├── SignUpRequest.java
+│   │   │               │   ├── LoginRequest.java
+│   │   │               │   ├── JwtResponse.java
+│   │   │               │   ├── RideBookingRequest.java
+│   │   │               │   └── UserProfileDto.java
+│   │   │               ├── entity/
+│   │   │               │   ├── User.java
+│   │   │               │   ├── Role.java
+│   │   │               │   ├── Ride.java
+│   │   │               │   └── VehicleType.java
+│   │   │               ├── enums/
+│   │   │               │   └── UserRole.java
+│   │   │               ├── repository/
+│   │   │               │   ├── UserRepository.java
+│   │   │               │   ├── RoleRepository.java
+│   │   │               │   └── RideRepository.java
+│   │   │               ├── security/ (JWT classes)
+│   │   │               │   ├── JwtTokenProvider.java
+│   │   │               │   ├── JwtAuthenticationFilter.java
+│   │   │               │   └── CustomUserDetailsService.java
+│   │   │               └── service/
+│   │   │                   ├── AuthService.java
+│   │   │                   ├── RideService.java
+│   │   │                   └── AccountService.java
+│   │   └── resources/
+│   │       ├── application.properties
+│   │       └── static/
+│   │       └── templates/
+└── pom.xml (or build.gradle)
